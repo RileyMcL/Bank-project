@@ -8,7 +8,7 @@ public class User {
 	protected String job;
 	protected String address;
 
-	User(String fName, String lName, String bDay, int licNum, String job, String address) {
+	public User(String fName, String lName, String bDay, int licNum, String job, String address) {
 		this.fName = fName;
 		this.lName = lName;
 		this.bDay = bDay;

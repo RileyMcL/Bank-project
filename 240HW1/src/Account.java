@@ -9,11 +9,19 @@ public abstract class Account {
 	protected BigDecimal accountBalance;
 	protected int accountNumber;
 	protected String accountOwner;
+	protected String authUser;
+	protected String dateCreated;
+	protected String dateClosed;
+	protected enum accountStatus{active, frozen, closed};
 	
-	Account(BigDecimal accountBalance, int accountNumber, String accountOwner){
+	
+	public Account(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,String dateCreated,String dateClosed){
 		this.accountBalance = accountBalance;
 		this.accountNumber = accountNumber;
 		this.accountOwner = accountOwner;
+		this.authUser = authUser;
+		this.dateCreated = dateCreated;
+		this.dateClosed = dateClosed;
 	}
 	
 	/**

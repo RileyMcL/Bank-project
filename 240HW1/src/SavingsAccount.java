@@ -13,8 +13,8 @@ import java.util.Scanner;
  */
 
 public class SavingsAccount extends Account {
-	SavingsAccount(BigDecimal accountBalance, int accountNumber, String accountOwner) {
-		super(accountBalance, accountNumber, accountOwner);
+	SavingsAccount(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,String dateCreated,String dateClosed) {
+		super(accountBalance, accountNumber, accountOwner,authUser, dateCreated, dateClosed);
 		// TODO Auto-generated constructor stub
 	}
 
