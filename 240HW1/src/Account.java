@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.util.InputMismatchException;
 /**
- * Abstract class that is used for checking and savings.
+ * Abstract class that is used for banking
  * @author mclau1ra
  *
  */
