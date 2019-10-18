@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.InputMismatchException;
 /**
  * Abstract class that is used for banking
@@ -10,12 +11,13 @@ public abstract class Account {
 	protected int accountNumber;
 	protected String accountOwner;
 	protected String authUser;
-	protected String dateCreated;
-	protected String dateClosed;
+	protected Date dateCreated;
+	protected Date dateClosed;
 	protected enum accountStatus{active, frozen, closed};
+	protected enum typeOfAccount{personalSa, studentSa, businessSa, personalCh, studentCh, businessCh};
 	
 	
-	public Account(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,String dateCreated,String dateClosed){
+	public Account(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,Date dateCreated,Date dateClosed){
 		this.accountBalance = accountBalance;
 		this.accountNumber = accountNumber;
 		this.accountOwner = accountOwner;

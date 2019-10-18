@@ -1,6 +1,7 @@
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,7 +14,7 @@ import java.util.Scanner;
  */
 
 public class SavingsAccount extends Account {
-	SavingsAccount(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,String dateCreated,String dateClosed) {
+	SavingsAccount(BigDecimal accountBalance, String accountOwner, int accountNumber, String authUser,Date dateCreated,Date dateClosed) {
 		super(accountBalance, accountNumber, accountOwner,authUser, dateCreated, dateClosed);
 		// TODO Auto-generated constructor stub
 	}

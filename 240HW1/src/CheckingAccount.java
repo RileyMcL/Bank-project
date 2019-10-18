@@ -1,10 +1,11 @@
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CheckingAccount extends Account {
 
-	CheckingAccount(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,String dateCreated,String dateClosed) {
+	CheckingAccount(BigDecimal accountBalance, int accountNumber, String accountOwner, String authUser,Date dateCreated,Date dateClosed) {
 		super(accountBalance, accountNumber, accountOwner,authUser, dateCreated, dateClosed );
 		// TODO Auto-generated constructor stub
 	}
